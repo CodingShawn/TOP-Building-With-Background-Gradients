@@ -62,14 +62,15 @@ html {
 .content {
     grid-column-start: 2;
     display: grid;
-    grid-template: 659px 200px 54px / repeat(4, 1fr) ;
+    grid-template: 659px 200px 54px / repeat(4, 360px);
+    overflow: hidden;
 }
 
 .focus {
     grid-area: 1 / 1 / 2 / -1;
     display: grid;
     place-items: center;
-    
+    background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
 }
 
 .focus-positioner {
@@ -77,21 +78,25 @@ html {
 
 }
 
+
+/* Nav styling */
+
 .shop-nav {
     display: grid;
     grid-template-columns: repeat(8, 104px) 132px;
+    padding-bottom: 50px;
 }
 
 .nav-btn {
     display: grid;
-    background: linear-gradient(#888, #888 50%, #777 50% ,#777);
+    background: linear-gradient(#888, #707070, #707070 50%, #5e5e5e 50%, #5e5e5e ,#757575);
     height: 36px;
     width: auto;
     place-items: center;
     font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #f7f7f7;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 550;
     border-left: 1px #606060 solid;
     cursor: pointer;
 }
@@ -156,3 +161,48 @@ footer {
     outline: none;
 }
 
+/* Pitch styling */
+
+.pitch {
+    cursor: pointer;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.pitch h1 {
+    height: 100px;
+    overflow: hidden;
+}
+
+h1 img {
+    height: 104px;
+    width: 980px;
+}
+
+h2 img {
+    height: 82px;
+    width: 980px;
+}
+
+.pitch div {
+    padding-top: 32px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.pitch div img {
+    height: 64px;
+    width: 980px;
+}
+
+/* Bottom section styling */
+
+.btm-imgs {
+    padding: 1px;
+    cursor: pointer;
+}
+
+.btm-imgs img {
+    height: 200px;
+    width: 364px;
+}
