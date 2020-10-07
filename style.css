@@ -198,11 +198,57 @@ h2 img {
 /* Bottom section styling */
 
 .btm-imgs {
-    padding: 1px;
+    padding: 2px;
     cursor: pointer;
 }
 
 .btm-imgs img {
     height: 200px;
     width: 364px;
+}
+
+/* Footer styling */
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(110, 110, 110);
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 26px;
+    width: 980px;
+    justify-self: center;
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: rgb(0, 136, 204);
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
+.site-info div {
+    padding-top: 15px;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.site-nav li {
+    padding-left: 6px;
+    margin-left: 6px;
+    border-left: 1px solid #ccc;
+    height: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.site-nav :first-child {
+    border: none;
 }
